@@ -12,11 +12,15 @@ form.addEventListener('submit', function(e) {
       socket.emit('chat message', input.value);
       input.value = '';
     }
-    if (user.value) {
-        socket.emit('by user', user.value);
-        user.value = '';
-      }
-  });
+  });  
+
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
+  if (user.value) {
+  socket.emit('by user', user.value);
+  user.value = '';
+}
+});
 
   socket.on('chat message', function(msg) {
     let item = document.createElement('li');
@@ -25,9 +29,7 @@ form.addEventListener('submit', function(e) {
     window.scrollTo(0, document.body.scrollHeight);
   });
 
-  //namediv.appendChild(nameItem);
-  //var nameItem = document.createElement('h3')
-  socket.on('Username', function(nme) {
+  socket.on('by user', function(nme) {
     let nameItem = document.createElement('li')
     nameItem.textContent = nme;
     namediv.appendChild(nameItem);
