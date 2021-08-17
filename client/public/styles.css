@@ -1,0 +1,49 @@
+body {
+    background-color: #1387FA;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+.title {
+    position: relative;
+    text-align: center;
+    top: 1em;
+}
+
+.nav {
+    position: relative;
+    top: 2em;
+}
+
+.nav-link {
+    color: black;
+    padding: 40px;
+}
+
+.div-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.AboutUs {
+    position: relative;
+border-width: 5px;
+border-color: black;
+border-style:groove;
+border-radius: 10px;
+height: 500px;
+width: 500px;
+background-color: white;
+top: 3em;
+}
+
+.about-p {
+font-size: 2rem;
+padding: 25px;
+}
+.aboutUs-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
