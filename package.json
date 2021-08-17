@@ -1,0 +1,23 @@
+{
+  "name": "sportstalk",
+  "version": "1.0.0",
+  "description": "sports talking app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evanstech12345/SportsChat.git"
+  },
+  "author": "Evan S",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/evanstech12345/SportsChat/issues"
+  },
+  "homepage": "https://github.com/evanstech12345/SportsChat#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.12"
+  }
+}
