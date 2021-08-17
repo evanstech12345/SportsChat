@@ -67,7 +67,14 @@ body {
     
 }
 
+small {
+    color: lightgrey;
+}
+
 #chatlog { list-style-type: none; margin: 0; padding: 0; }
       #chatlog > li { padding: 0.5rem 1rem; }
       #chatlog > li:nth-child(odd) { background: #efefef; }
 
+#namediv > li {
+    color: black;
+}

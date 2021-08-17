@@ -1,10 +1,9 @@
 const express = require('express');
 const app = express()
 const path = require('path')
-const http = require('http');
-const server = http.createServer(app);
-const Server = require("socket.io");
-const io = Server(server);
+
+const http = require('http').Server(app);
+const io = require('socket.io')(http);
 
 //middleware
 app.set('view-engine', 'ejs')
@@ -12,19 +11,16 @@ app.use(express.static(path.join(__dirname, 'client/public')));
 
 //socket.io
 io.on('connection', (socket) => {
-  console.log('User is connected')
-  socket.on('disconnect', () => {
-    console.log('user has disconnected')
-  })
-  socket.on('chat message', (msg) => {
-    console.log('message: ' + msg);
-  })
-  io.on('connection', (socket) => {
-    socket.on('chat message', (msg) => {
-      io.emit('chat message', msg);
-    });
-} )
-})
+  socket.on('chat message', msg => {
+    io.emit('chat message', msg);
+  });
+});
+
+io.on('connection', (socket) => {
+  socket.on('by user', nme => {
+    io.emit('by user', nme);
+  });
+});
 
 
 //routes
@@ -46,6 +42,6 @@ app.get('/NHL', (req, res) => {
 
  
 
-server.listen(3000, () => {
-  console.log('listening on *:3000');
+http.listen(4000, () => {
+  console.log('listening on *:4000');
 });
