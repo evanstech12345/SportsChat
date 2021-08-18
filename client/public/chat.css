@@ -1,13 +1,26 @@
+
+
+@media  screen and (max-width: 2280px) {
+    
+
 body {
     background-color: #1387FA;
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
 }
-
 .title {
     position: relative;
     text-align: center;
     top: 1em;
+}
+.link-title {
+    position: relative;
+    color: black
+}
+.link-title:hover {
+    position: relative;
+    color: black;
+    text-decoration: none;
 }
 
 .nav {
@@ -47,7 +60,7 @@ body {
 .chatsystem {
     position: relative;
     bottom: 10em;
-    left: 25em;
+    /* left: 25em; */
     background-color: white;
     height: 400px;
     width: 400px;
@@ -78,3 +91,156 @@ small {
 #namediv > li {
     color: black;
 }
+.chatsystem-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#form {
+    position: relative;
+    max-width: 700px;
+    left: 10%;
+
+}
+}
+
+@media  screen and (max-width: 1190px) {
+#form {
+    position: relative;
+    width: 500px;
+}
+body {
+    background-color: #1387FA;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+}
+
+
+@media  screen and (max-width: 1005px) {
+    #form {
+        position: relative;
+        width: 300px;
+    
+    }
+    body {
+        background-color: #1387FA;
+        font-family: 'Montserrat', sans-serif;
+        overflow-x: hidden;
+    }
+}
+
+    @media  screen and (max-width: 800px) {
+        #form {
+            position: relative;
+            top: 17.5em;
+            width: 500px;
+            left: 30%;
+        }
+        .chatsystem {
+            height: 300px;
+        }
+        body {
+            background-color: #1387FA;
+            font-family: 'Montserrat', sans-serif;
+            overflow-x: hidden;
+        }
+        }
+        @media  screen and (max-width: 650px) {
+            #form {
+                position: relative;
+                top: 17.5em;
+                width: 500px;
+                left: 30%;
+            }
+            .chatsystem {
+                height: 300px;
+            }
+            body {
+                background-color: #1387FA;
+                font-family: 'Montserrat', sans-serif;
+                overflow-x: hidden;
+            }
+            }
+
+            @media  screen and (max-width: 449px) {
+                #form {
+                    position: relative;
+                    top: 17.5em;
+                    width: 500px;
+                    left: 30%;
+                }
+                .chatsystem {
+                    height: 300px;
+                    
+                }
+                body {
+                    background-color: #1387FA;
+                    font-family: 'Montserrat', sans-serif;
+                    overflow-x: hidden;
+                }
+                .nav {
+                    position: relative;
+                    top: 2em;
+                }
+                
+                .nav-link {
+                    color: black;
+                    padding: 35px;
+                    
+                }
+                }
+
+                @media  screen and (max-width: 407px) {
+                    #form {
+                        position: relative;
+                        top: 17.5em;
+                        width: 500px;
+                        left: 30%;
+                    }
+                    .chatsystem {
+                        height: 300px;
+                    }
+                    body {
+                        background-color: #1387FA;
+                        font-family: 'Montserrat', sans-serif;
+                        overflow-x: hidden;
+                    }
+                    .nav {
+                        position: relative;
+                        top: 2em;
+                    }
+                    
+                    .nav-link {
+                        color: black;
+                        padding: 30px;
+                        
+                    }
+                    }
+                    @media  screen and (max-width: 360px) {
+                        #form {
+                            position: relative;
+                            top: 17.5em;
+                            width: 500px;
+                            left: 30%;
+                        }
+                        body {
+                            background-color: #1387FA;
+                            font-family: 'Montserrat', sans-serif;
+                            overflow-x: hidden;
+                        }
+                        .chatsystem {
+                            height: 300px;
+                            left: 1.5em;
+                        }
+                        .nav {
+                            position: relative;
+                            top: 2em;
+                        }
+                        
+                        .nav-link {
+                            color: black;
+                            padding: 25px;
+                            
+                        }
+                        }
