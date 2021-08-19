@@ -22,7 +22,7 @@ io.on('connection', (socket) => {
   });
 });
 
-//d
+//dawdawdad
 
 
 
@@ -46,5 +46,5 @@ app.get('/NHL', (req, res) => {
  
 
 http.listen(4000, () => {
-  console.log('listening on *:4000');
+  console.log('listening on port 4000');
 });
