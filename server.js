@@ -22,6 +22,9 @@ io.on('connection', (socket) => {
   });
 });
 
+//rooms with socket.io
+
+
 
 //routes
 app.get('/', (req, res) => {
