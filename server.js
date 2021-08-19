@@ -27,19 +27,19 @@ io.on('connection', (socket) => {
 
 
 //routes
-app.get('sporttalk.netlify.app/', (req, res) => {
+app.get('/', (req, res) => {
   res.render('/opt/homebrew/Caskroom/miniforge/base/envs/sportstalk/client/view/index.ejs')
 })
-app.get('sporttalk.netlify.app/MLB', (req, res) => {
+app.get('/MLB', (req, res) => {
   res.render('/opt/homebrew/Caskroom/miniforge/base/envs/sportstalk/client/view/Mlb.ejs')
 })
-app.get('sporttalk.netlify.app/NBA', (req, res) => {
+app.get('/NBA', (req, res) => {
   res.render('/opt/homebrew/Caskroom/miniforge/base/envs/sportstalk/client/view/Nba.ejs')
 })
-app.get('sporttalk.netlify.app/NFL', (req, res) => {
+app.get('/NFL', (req, res) => {
   res.render('/opt/homebrew/Caskroom/miniforge/base/envs/sportstalk/client/view/Nfl.ejs')
 })
-app.get('sporttalk.netlify.app/NHL', (req, res) => {
+app.get('/NHL', (req, res) => {
   res.render('/opt/homebrew/Caskroom/miniforge/base/envs/sportstalk/client/view/Nhl.ejs')
 })
 
