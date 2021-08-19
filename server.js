@@ -22,7 +22,7 @@ io.on('connection', (socket) => {
   });
 });
 
-//rooms with socket.io
+
 
 
 
