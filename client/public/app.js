@@ -4,7 +4,8 @@ const form = document.getElementById('form');
 const input = document.getElementById('exampleInputPassword1');
 const messages = document.getElementById('chatlog')
 const user = document.getElementById('username')
-const namediv = document.getElementById('namediv')
+// const namediv = document.getElementById('namediv')
+// const byuser = document.getElementById('byuser')
 
 form.addEventListener('submit', function(e) {
     e.preventDefault();
@@ -29,9 +30,11 @@ form.addEventListener('submit', function(e) {
     window.scrollTo(0, document.body.scrollHeight);
   });
 
-  socket.on('by user', function(nme) {
+  socket.on('by user', function(user) {
+    const text = document.createTextNode("by :");
     let nameItem = document.createElement('li')
-    nameItem.textContent = nme;
-    namediv.appendChild(nameItem);
+    nameItem.textContent = user;
+    messages.appendChild(nameItem)
+    nameItem.innerHTML = "by : " + user
     window.scrollTo(0, document.body.scrollHeight);
 })
